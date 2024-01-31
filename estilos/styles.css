@@ -180,4 +180,35 @@ main .nosotros div p {
   width: 1000px;
 }
 
+.living {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.living div div h1 {
+  font-size: 45px;
+  margin-top: 20px;
+}
+.living div div .galerialiving {
+  text-align: center;
+  margin-bottom: 50pxp;
+}
+.living div div .galerialiving h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+.living div div .galerialiving .galeria {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+.living div div .galerialiving .galeria img {
+  height: 250px;
+}
+
 /*# sourceMappingURL=styles.css.map */
