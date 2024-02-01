@@ -1,0 +1,40 @@
+.promociones {
+    @include FlexBox(column, center, center);
+
+    div {
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: map-get($titulos, altura1);
+            font-weight: map-get($titulos, negrita1);
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    }
+
+    div {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: map-get($titulos, altura2);
+            font-weight: map-get($titulos, negrita2);
+        }
+    }
+
+    .imagenuno {
+        @include FlexBox(row, center, center);
+
+        a {
+            img {
+                height: 250px;
+                width: 350px;
+                justify-content: center;
+                transition: 1s;
+
+                &:hover {
+                    scale: 1.2
+                }
+            }
+        }
+    }
+}

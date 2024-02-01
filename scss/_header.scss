@@ -9,14 +9,15 @@
     .logo {
         background-color: white;
         margin-right: 250px;
-        margin-left: 350px;
+        margin-left: 0px;
 
         a {
             img {
                 width: 400px;
                 height: 150px;
                 margin: 20px;
-                text-align: center;
+                text-align: center;             
+                }
             }
         }
 
@@ -34,6 +35,12 @@
                     justify-content: center;
                     margin-left: 20px;
                     margin-right: 10px;
+                    transition: 1s;
+                    &:hover{
+                        scale: 1.3;
+                        box-shadow: black;
+                        margin-left: 20px;
+                        margin-right: 20px;
                 }
             }
         }
@@ -60,10 +67,19 @@
                             color: white;
                             font-weight: 700;
                             font-size: 20px;
+                            transition: 0.5s;
+                            &:hover{
+                                background-color: white;
+                                color: #3D2B56;
+                            }
                         }
                     }
                 }
             }
         }
     }
+}
+
+.boton{
+    background-color: white;
 }

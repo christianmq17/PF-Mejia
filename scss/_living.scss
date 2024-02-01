@@ -1,16 +1,14 @@
 .living {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    @include FlexBox(column, center, center);
     text-align: center;
-    justify-content: center;
-    align-items: center;
 
     div {
         div {
             h1 {
-                font-size: 45px;
-                margin-top: 20px;
+                font-size: map-get($titulos, altura1);
+                font-weight: map-get($titulos, negrita1);
+                margin-top: 30px;
+                margin-bottom: 30px;
             }
         }
 
@@ -20,7 +18,8 @@
                 margin-bottom: 50pxp;
 
                 h2 {
-                    font-size: 28px;
+                    font-size: map-get($titulos, altura2);
+                    font-weight: map-get($titulos, negrita2);
                     margin-top: 20px;
                 }
 
@@ -30,9 +29,16 @@
                     color: black;
                     font-weight: 500;
                     font-size: 20px;
+                    transition-duration: 1s;
+
 
                     img {
                         height: 250px;
+                        transition: 1s;
+
+                        &:hover {
+                            scale: 1.05
+                        }
                     }
 
                 }

@@ -1,0 +1,68 @@
+.contacto {
+    .contactoFlex {
+        @include FlexBox(column, center, center);
+        height: auto;
+
+        h1 {
+            font-size: map-get($titulos, altura1);
+            font-weight: map-get($titulos, negrita1);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .caja12 {
+            @extend .contactoFlex;
+            width: auto;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 40px;
+
+            .caja1 {
+                p{
+                    font-family: $estiloParrafo;  
+                }
+                width: 500px;
+                height: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+            }
+
+            .caja2 {
+                width: 500px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+
+                label {
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    margin-left: 0px;
+                }
+
+                textarea {
+                    height: 150px;
+
+                }
+            }
+        }
+
+        .caja3 {
+            margin-top: 20px;
+        }
+
+        .caja4 {
+            p{
+              font-family: $estiloParrafo;  
+            }
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 420px;
+            height: auto;
+        }
+    }
+}

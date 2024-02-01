@@ -431,7 +431,7 @@ a{
     align-items: center;
 }
 
-.promo{
+.contactoFlex{
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
