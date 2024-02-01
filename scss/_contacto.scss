@@ -13,12 +13,14 @@
         .caja12 {
             @extend .contactoFlex;
             width: auto;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-around;
             margin-top: 40px;
 
             .caja1 {
                 p{
+                    width: 500px;
                     font-family: $estiloParrafo;  
                 }
                 width: 500px;
@@ -35,6 +37,9 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: left;
+                input{
+                    width: 400px;
+                }
 
                 label {
                     font-size: 15px;
@@ -44,6 +49,7 @@
                 }
 
                 textarea {
+                    width: 400px;
                     height: 150px;
 
                 }
@@ -52,10 +58,16 @@
 
         .caja3 {
             margin-top: 20px;
+            iframe{
+                width: 500px;
+            }
         }
 
         .caja4 {
+            display: flex;
+            flex-wrap: wrap;
             p{
+                width: 500px;
               font-family: $estiloParrafo;  
             }
             text-align: center;

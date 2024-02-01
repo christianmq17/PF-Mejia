@@ -2,14 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
 .logoRedes .logo {
   background-color: white;
-  margin-right: 250px;
-  margin-left: 0px;
 }
 .logoRedes .logo a img {
   width: 400px;
@@ -20,6 +18,8 @@
 
 .redesSup {
   display: flex;
+  justify-content: baseline;
+  align-items: end;
   margin-left: 0px;
 }
 .redesSup div a .iconosSup {
@@ -144,6 +144,8 @@ footer div div div a img {
   margin-bottom: 10px;
 }
 .index div div {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
@@ -166,7 +168,7 @@ footer div div div a img {
   margin-right: 10px;
 }
 
-main .nosotros {
+main .sobreNosotros {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -176,36 +178,38 @@ main .nosotros {
   flex-direction: column;
   text-align: center;
 }
-main .nosotros h1 {
+main .sobreNosotros h1 {
   margin-top: 30px;
   font-size: 45px;
   font-weight: 700;
 }
-main .nosotros .parrafo {
+main .sobreNosotros .parrafo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
   margin-top: 50px;
   margin-bottom: 15px;
-  width: auto;
 }
-main .nosotros .imagennosotros {
+main .sobreNosotros .imagennosotros {
   margin-top: 20px;
   margin-bottom: 50px;
   padding: auto;
 }
-main .nosotros .imagennosotros img {
+main .sobreNosotros .imagennosotros img {
   width: 600px;
 }
-main .nosotros h2 {
+main .sobreNosotros h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 30px;
 }
-main .nosotros div {
+main .sobreNosotros div {
   margin-bottom: 20px;
 }
-main .nosotros div p {
+main .sobreNosotros div p {
   margin-top: 20px;
   font-size: 22px;
-  width: 1000px;
+  width: 600px;
 }
 
 .living {
@@ -307,6 +311,7 @@ main .nosotros div p {
 }
 .contacto .contactoFlex .caja12 {
   width: auto;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 40px;
@@ -318,6 +323,7 @@ main .nosotros div p {
   margin-bottom: 20px;
 }
 .contacto .contactoFlex .caja12 .caja1 p {
+  width: 500px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .contacto .contactoFlex .caja12 .caja2 {
@@ -328,6 +334,9 @@ main .nosotros div p {
   justify-content: center;
   text-align: left;
 }
+.contacto .contactoFlex .caja12 .caja2 input {
+  width: 400px;
+}
 .contacto .contactoFlex .caja12 .caja2 label {
   font-size: 15px;
   font-weight: 700;
@@ -335,12 +344,18 @@ main .nosotros div p {
   margin-left: 0px;
 }
 .contacto .contactoFlex .caja12 .caja2 textarea {
+  width: 400px;
   height: 150px;
 }
 .contacto .contactoFlex .caja3 {
   margin-top: 20px;
 }
+.contacto .contactoFlex .caja3 iframe {
+  width: 500px;
+}
 .contacto .contactoFlex .caja4 {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -348,6 +363,7 @@ main .nosotros div p {
   height: auto;
 }
 .contacto .contactoFlex .caja4 p {
+  width: 500px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
