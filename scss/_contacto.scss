@@ -1,7 +1,6 @@
 .contacto {
     .contactoFlex {
         @include FlexBox(column, center, center);
-        height: auto;
 
         h1 {
             font-size: map-get($titulos, altura1);
@@ -11,16 +10,17 @@
         }
 
         .caja12 {
-            @extend .contactoFlex;
-            width: auto;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 40px;
-
+                   display: flex;
+                   flex-direction: row;
+                   flex-wrap: wrap;
+                   justify-content: center;
+                   margin: 0%;
             .caja1 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
                 p{
-                    width: 500px;
                     font-family: $estiloParrafo;  
                 }
                 width: 500px;
@@ -36,7 +36,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                text-align: left;
+                text-align:left;
                 input{
                     width: 400px;
                 }
@@ -57,10 +57,12 @@
         }
 
         .caja3 {
-            margin-top: 20px;
-            iframe{
-                width: 500px;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 600px;
+            margin-top: 10px;
         }
 
         .caja4 {
@@ -75,6 +77,62 @@
             margin-bottom: 30px;
             width: 420px;
             height: auto;
+            p{
+              width: 400px;
+              font-family: $estiloParrafo;  
+            }
         }
     }
+
 }
+
+.mapa{
+    width: 600px;
+    height: 600px;
+}
+@media (max-width:768px){
+
+    .caja12{
+        width: 400px;
+    }
+}
+
+@media (max-width:768px){
+
+    .caja1{
+        width: 400px;
+    }
+}
+
+@media (max-width:768px){
+
+    .caja2{
+        align-items: center;
+        width: 400px;
+        margin: 0%;
+    }
+}
+
+@media (max-width:768px){
+
+    .caja3{
+        width: 400px;
+        height: 400px;
+        margin: 0%;
+    }   
+
+}
+
+@media (max-width:768px){
+
+    .mapa{
+        width: 400px;
+        height: 400px;
+    }   
+    
+}
+
+
+
+
+

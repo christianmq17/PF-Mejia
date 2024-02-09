@@ -7,7 +7,7 @@
   text-align: center;
 }
 .logoRedes .logo {
-  background-color: white;
+  margin-left: 40px;
 }
 .logoRedes .logo a img {
   width: 400px;
@@ -28,6 +28,9 @@
   margin-left: 20px;
   margin-right: 10px;
   transition: 1s;
+}
+.redesSup div a .iconosSup:hover {
+  scale: 1.2;
 }
 
 .main {
@@ -137,14 +140,17 @@ footer div div div a img {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.index div div {
+.index div .div {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
-.index div div p {
+.index div .div p {
   font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 30px;
@@ -162,6 +168,13 @@ footer div div div a img {
   margin-right: 10px;
 }
 
+@media (max-width: 650px) {
+  .parrafos {
+    width: 400px;
+    background-color: black;
+    color: white;
+  }
+}
 main .sobreNosotros {
   display: flex;
   flex-wrap: wrap;
@@ -361,4 +374,4 @@ main .sobreNosotros div p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=styles.css.map */

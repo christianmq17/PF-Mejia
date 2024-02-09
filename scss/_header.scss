@@ -7,7 +7,8 @@
     text-align: center;
 
     .logo {
-        margin-left: 40px;
+        margin-left: 34px;
+        width: auto;
         a {
             img {
                 width: 400px;
@@ -28,7 +29,6 @@
     div {
         a {
             .iconosSup {
-                font-size: 40px;
                 justify-content: center;
                 margin-left: 20px;
                 margin-right: 10px;
@@ -78,4 +78,15 @@
 
 .boton {
     background-color: white;
+}
+
+a .iconosSup{
+    font-size: 40px;
+}
+
+@media (max-width:768px){
+
+    a .iconosSup{
+        font-size: 0px;
+    }
 }
