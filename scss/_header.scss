@@ -11,8 +11,8 @@
         width: auto;
         a {
             img {
-                width: 450px;
-                height: 200px;
+                width: 400px;
+                height: 150px;
                 margin: 20px;
                 text-align: center;
             }
@@ -88,5 +88,13 @@ a .iconosSup{
 
     a .iconosSup{
         font-size: 0px;
+    }
+}
+
+@media (max-width:768px){
+
+    .logo a img{
+        width: 300px;
+        height: 90px;
     }
 }
