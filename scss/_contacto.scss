@@ -60,9 +60,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 600px;
-            height: 600px;
-            margin-top: 10px;
+            width: auto;
+            height: auto;
+            margin-top: 30px;
         }
 
         .caja4 {
@@ -93,14 +93,14 @@
 @media (max-width:768px){
 
     .caja12{
-        width: 400px;
+        width: 300px;
     }
 }
 
 @media (max-width:768px){
 
     .caja1{
-        width: 400px;
+        width: 300px;
     }
 }
 
@@ -108,7 +108,7 @@
 
     .caja2{
         align-items: center;
-        width: 400px;
+        width: 300px;
         margin: 0%;
     }
 }
@@ -116,8 +116,9 @@
 @media (max-width:768px){
 
     .caja3{
-        width: 400px;
-        height: 400px;
+        background-color: black;
+        width: 300px;
+        height: 300px;
         margin: 0%;
     }   
 
@@ -126,8 +127,16 @@
 @media (max-width:768px){
 
     .mapa{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }   
+    
+}
+
+@media (max-width:768px){
+
+    input{
+        width: 300px;
     }   
     
 }

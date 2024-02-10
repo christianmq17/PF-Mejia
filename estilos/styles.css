@@ -135,26 +135,19 @@ footer div div div a img {
   align-items: center;
   align-content: center;
 }
-.index div {
+.index section .imagen {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.index div div {
   margin-top: 30px;
   text-align: center;
 }
-.index div div .imagenMain {
-  width: 400px;
+.index section .imagen .imagenMain {
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.index div div {
+.index section div {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -164,27 +157,50 @@ footer div div div a img {
   align-items: center;
   align-content: center;
 }
-.index div div p {
-  font-size: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.index section div .parrafos p {
+  font-size: 40px;
   margin-top: 30px;
   font-weight: 800;
 }
-.index div div h1 {
-  text-align: center;
-}
-.index div div img {
-  height: 300px;
-  width: 400px;
-  margin-top: 10px;
+.index section div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 30px;
-  margin-left: 1opx;
-  margin-right: 10px;
+}
+.index section div .imagenes {
+  display: flex;
+  flex-direction: row;
+}
+.index section div .imagenes div {
+  background-color: #3D2B56;
+  width: 350px;
+  height: autopx;
+  color: white;
+}
+.index section div .imagenes div img {
+  width: 350px;
+  height: 250px;
 }
 
-@media (max-width: 650px) {
+.parrafos p {
+  font-size: 20px;
+}
+
+.imagenMain {
+  width: 400px;
+}
+
+@media (max-width: 520px) {
   .parrafos {
-    width: 400px;
+    width: 300px;
+    background-color: aqua;
+  }
+}
+@media (max-width: 520px) {
+  .imagenMain {
+    width: 320px;
+    height: 300px;
   }
 }
 main .sobreNosotros {
@@ -194,43 +210,58 @@ main .sobreNosotros {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-direction: column;
+  align-items: center;
+  align-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 main .sobreNosotros h1 {
   margin-top: 30px;
   font-size: 45px;
   font-weight: 700;
 }
-main .sobreNosotros .parrafo {
+main .sobreNosotros .imagen {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-  margin-top: 50px;
-  margin-bottom: 15px;
-}
-main .sobreNosotros .imagennosotros {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  padding: auto;
-}
-main .sobreNosotros .imagennosotros img {
-  width: 600px;
+  justify-content: center;
 }
 main .sobreNosotros h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-main .sobreNosotros div {
-  margin-bottom: 20px;
-}
-main .sobreNosotros div p {
-  margin-top: 20px;
-  font-size: 22px;
-  width: 600px;
+  margin-top: 30px;
+  font-size: 35px;
+  font-weight: 500;
 }
 
+.imagenSobre {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.parrafo1 {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .parrafo1 {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .imagen {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .imagenSobre {
+    width: 350px;
+    height: 300px;
+  }
+}
 .living {
   display: flex;
   flex-wrap: wrap;
@@ -372,9 +403,9 @@ main .sobreNosotros div p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 600px;
-  margin-top: 10px;
+  width: auto;
+  height: auto;
+  margin-top: 30px;
 }
 .contacto .contactoFlex .caja4 {
   display: flex;
@@ -401,32 +432,38 @@ main .sobreNosotros div p {
 
 @media (max-width: 768px) {
   .caja12 {
-    width: 400px;
+    width: 300px;
   }
 }
 @media (max-width: 768px) {
   .caja1 {
-    width: 400px;
+    width: 300px;
   }
 }
 @media (max-width: 768px) {
   .caja2 {
     align-items: center;
-    width: 400px;
+    width: 300px;
     margin: 0%;
   }
 }
 @media (max-width: 768px) {
   .caja3 {
-    width: 400px;
-    height: 400px;
+    background-color: black;
+    width: 300px;
+    height: 300px;
     margin: 0%;
   }
 }
 @media (max-width: 768px) {
   .mapa {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  input {
+    width: 300px;
   }
 }
 

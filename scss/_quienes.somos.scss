@@ -1,49 +1,65 @@
 main {
     .sobreNosotros {
         @include FlexBox (column, center, center);
-        flex-direction: column;
+        align-items: center;
+        align-content: center;
         text-align: center;
+        flex-wrap: wrap;
 
         h1 {
             margin-top: 30px;
             font-size: map-get($titulos, altura1);
             font-weight: map-get($titulos, negrita1);
         }
-
-        .parrafo {
+        .imagen{
             display: flex;
             flex-wrap: wrap;
-            width: 600px;
-            margin-top: 50px;
-            margin-bottom: 15px;
-        }
-
-        .imagennosotros {
-            margin-top: 20px;
-            margin-bottom: 50px;
-            padding: auto;
-
-            img {
-                width: 600px;
-            }
+            justify-content: center;
+            
         }
 
         h2 {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 30px;
+            margin-top: 30px;
+            font-size: map-get($titulos, altura2);
+            font-weight: map-get($titulos, negrita2);
         }
+    }
+}
 
-        div {
-            margin-bottom: 20px;
+.imagenSobre {
+    margin-top: 30px;
+    width: 60%;
+}
 
-            p {
-                margin-top: 20px;
-                font-size: 22px;
-                width: 600px;
-            }
+.parrafo1 {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: 30px;
+    text-align: center;
+}
 
-        }
+
+@media (max-width:768px) {
+    .parrafo1 {
+        width: 350px;
+        height: auto;
+    }
+
+}
+
+@media (max-width:768px) {
+    .imagen{
+        width: 350px;
+        height: auto;
+    }
+
+}
+
+@media (max-width:768px) {
+    .imagenSobre {
+        width: 350px;
+        height: 300px;
     }
 
 }
