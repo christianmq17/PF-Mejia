@@ -7,12 +7,12 @@
   text-align: center;
 }
 .logoRedes .logo {
-  margin-left: 34px;
+  margin-left: 0;
   width: auto;
 }
 .logoRedes .logo a img {
-  width: 400px;
-  height: 150px;
+  width: 450px;
+  height: 200px;
   margin: 20px;
   text-align: center;
 }
@@ -194,7 +194,6 @@ footer div div div a img {
 @media (max-width: 520px) {
   .parrafos {
     width: 300px;
-    background-color: aqua;
   }
 }
 @media (max-width: 520px) {
@@ -387,7 +386,7 @@ main .sobreNosotros h2 {
   text-align: left;
 }
 .contacto .contactoFlex .caja12 .caja2 input {
-  width: 400px;
+  width: 350px;
 }
 .contacto .contactoFlex .caja12 .caja2 label {
   font-size: 15px;
@@ -396,8 +395,8 @@ main .sobreNosotros h2 {
   margin-left: 0px;
 }
 .contacto .contactoFlex .caja12 .caja2 textarea {
-  width: 400px;
-  height: 150px;
+  width: 350px;
+  height: 120px;
 }
 .contacto .contactoFlex .caja3 {
   display: flex;
